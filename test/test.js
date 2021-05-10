@@ -12,7 +12,7 @@ contract("MyToken", function (accounts) {
       })
   })
 
-  it("It should not accept unsigned number", () => {
+  it("It should not accept signed number", () => {
     return MyContract.deployed()
       .then((instance) => {
         try {

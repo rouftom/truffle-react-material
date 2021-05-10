@@ -27,6 +27,11 @@ First, create a new empty directory and go to it.
     compile
     migrate
     ```
+    If you want to migrate your smart contract with a fresh blockchain state, you can run the command below.
+     ```javascript
+    truffle migrate --reset
+    ```
+    The `--reset` flag purge the blockchain state. Don't run the command with this flag in production unless you know what you are doing.
 
 5. In the `root` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
     ```javascript
