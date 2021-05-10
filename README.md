@@ -97,6 +97,8 @@ First, create a new empty directory and go to it.
 
     This box is composed of [Truffle](http://truffleframework.com/), [React](https://fr.reactjs.org/), [Material-UI](https://material-ui.com/), [Webpack 5](https://webpack.js.org/) and [Babel 7](https://babeljs.io/)
 
+    You can also find amazing royalty free illustrations on [Manypixels](http://manypixels.co/gallery)
+
 ## Extra
 
     😊 Do you like this box? Buy me a coffee
