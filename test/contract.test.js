@@ -1,3 +1,7 @@
+
+// Tests that containt contract function must only be runned with
+// truffle test command. You will get and error if you run it 
+// with mocha
 var MyContract = artifacts.require("./MyContract.sol")
 
 contract("MyToken", function (accounts) {
