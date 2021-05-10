@@ -1,0 +1,8 @@
+{
+    "assumptions": {
+      "constantSuper": true,
+      "noClassCalls": true,
+      "setClassMethods": true,
+      "superIsCallableConstructor": true
+    }
+  }
