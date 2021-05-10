@@ -1,7 +1,8 @@
 {
   "ignore": [
     "README.md",
-    ".gitignore"
+    ".gitignore",
+	"github-banner.png"
   ],
 	"commands": {
 		"Compile": "truffle compile",

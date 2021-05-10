@@ -19,7 +19,8 @@
   "scripts": {
     "start": "webpack --mode development --content-base . --history-api-fallback",
     "dev": "webpack serve --mode development --content-base . --history-api-fallback",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "test"
   },
   "license": "MIT",
   "devDependencies": {

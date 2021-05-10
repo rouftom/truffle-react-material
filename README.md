@@ -1,4 +1,23 @@
-# React + Material-UI + Truffle Box
+
+
+
+
+<h1 align="center">React + Material-UI + Truffle Box</h1> <br>
+<p align="center">
+  <img alt="truffle react" src="github-banner.png" width="200">
+</p>
+<p align="center">Rapid Ethereum Dapp Development</p>
+
+<p align="center">
+  <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
+  <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
+  <img alt="Travis (.com)" src="https://img.shields.io/travis/com/rouftom/truffle-react-material">
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/rouftom/truffle-react-material">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/rouftom/truffle-react-material">
+  <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/rouftom/truffle-react-material">
+</p>
+
+---
 
 This box contains everything you need to get started using smart contracts from a Rect app with the Material-ui library.
 
