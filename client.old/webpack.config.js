@@ -4,11 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './',
-    hot: false
-  },
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path: path.join(__dirname, "dist"),
@@ -70,6 +65,7 @@ module.exports = {
       os: 'os-browserify/browser'
     },
     fallback: {
+      url: false,
       fs: false,
       util: false,
       path: false,

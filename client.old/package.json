@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "🔥 Truffle box using React, Material-ui, Babel 7 and Webpack 5 for 👨🏽‍💻 get started",
   "directories": {
-    "test": "test"
+    "test": "../test"
   },
   "keywords": [
     "truffle",
@@ -17,10 +17,10 @@
     "blockchain"
   ],
   "scripts": {
-    "start": "webpack --mode development --content-base . --history-api-fallback",
-    "dev": "webpack serve --mode development --content-base . --history-api-fallback",
-    "build": "webpack --mode production",
-    "test": "mocha test/app.test.js"
+    "start": "webpack serve --mode development --env development --hot --port 3000",
+    "dev": "webpack serve --mode development --env development --hot --port 3000",
+    "build": "webpack serve --mode production",
+    "test": "mocha ../test/app.test.js"
   },
   "license": "MIT",
   "devDependencies": {
