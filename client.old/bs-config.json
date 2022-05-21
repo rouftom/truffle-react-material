@@ -1,5 +1,0 @@
-{
-  "server": {
-    "baseDir": ["./client/src", "./build/contracts"]
-  }
-}

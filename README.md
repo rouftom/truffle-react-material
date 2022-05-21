@@ -4,7 +4,7 @@
 
 <h1 align="center">React + Material-UI + Truffle Box</h1> <br>
 <p align="center">
-  <img alt="truffle react" src="github-banner.png" width="200">
+  <img alt="truffle react" src="https://user-images.githubusercontent.com/12144793/169374355-552f4b76-211a-423d-b6c0-3f2eb299a0d4.png" width="200">
 </p>
 <p align="center">Rapid Ethereum Dapp Development</p>
 
@@ -52,7 +52,8 @@ First, create a new empty directory and go to it.
     ```
     The `--reset` flag purge the blockchain state. Don't run the command with this flag in production unless you know what you are doing.
 
-5. In the `root` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
+
+5. In the `client` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
     ```javascript
     // in another terminal (i.e. not in the truffle develop prompt)
     npm run start
@@ -69,7 +70,7 @@ First, create a new empty directory and go to it.
 
 7.  For testing React components with Jest, you can install it as dev dependency. Compile your contracts before running Jest, or you may receive some file not found errors.
     ```javascript
-    // ensure you are inside the client directory when running this
+    // ensure you are inside the client.old directory when running this
     npm install --save-dev @testing-library/react
 
     npm run test
@@ -77,7 +78,7 @@ First, create a new empty directory and go to it.
 
 8. To build the application for production, use the build script. A production build will be in the `dist/` folder.
     ```javascript
-    // ensure you are inside the client directory when running this
+    // ensure you are inside the client.old directory when running this
     npm run build
     ```
 
