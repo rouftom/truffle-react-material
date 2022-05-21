@@ -14,7 +14,6 @@
   <img alt="Travis (.com)" src="https://img.shields.io/travis/com/rouftom/truffle-react-material">
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/rouftom/truffle-react-material">
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/rouftom/truffle-react-material">
-  <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/rouftom/truffle-react-material">
 </p>
 
 ---
@@ -102,8 +101,11 @@ First, create a new empty directory and go to it.
 
 ## Extra
 
-    😊 Do you like this box? Buy me a coffee
+    😊 Do you like this library ? Buy me a coffee or support me with a star on Github
 
-* Btc address: `1A2VNHSLGDyYsKWniJBe8cCqYWC52NvNZx`
+<a href="https://www.buymeacoffee.com/Lnp9rkM" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 180px !important;" ></a>
 
-* Eth address: `0xFe444a01D9494Ec04f61797e15193C8016D666A5`
+* Btc address: `bc1qettgagenn9nc8ks7ghntjfme96yvvkfhntk774`
+
+
+* Eth address: `0xB0413d8D0336E263e289A915c383e152155881E0`

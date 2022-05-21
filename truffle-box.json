@@ -1,10 +1,6 @@
 {
   "ignore": [
-		"README.md",
-		".gitignore",
-		"box-img-lg.png",
-		"box-img-sm.png",
-		".github"
+		"README.md", ".gitignore", "box-img-lg.png", "box-img-sm.png", ".github"
   ],
 	"commands": {
 		"Compile": "truffle compile --contracts_build_directory=./client/src/build",
@@ -15,6 +11,6 @@
 		"Build for production": "cd client && npm run build"
 	},
 	"hooks": {
-		"post-unpack": "cd client && npm ci"
+		"post-unpack": "cd client && npm ci --legacy-deps"
 	}
 }

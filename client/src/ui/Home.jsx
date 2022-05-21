@@ -8,11 +8,9 @@ import {
   ThemeProvider, Stack
 } from "@mui/material";
 import {AppTheme} from "../lib/theme";
-import {Web3Context} from "../lib/Web3Context";
 import {MyContractContext} from "../lib/MyContractContext";
 
 const Home = (props) => {
-  const web3Context = useContext(Web3Context);
   const MyContract = useContext(MyContractContext);
 
   const handleAction = () => {
@@ -20,20 +18,16 @@ const Home = (props) => {
   };
 
   useEffect(() => {
-    try {
-      MyContract
-        .deployed()
-        .then(async function(instance) {
-          // Do something with instance...
-          // Get accounts
-          //const accounts = await web3Context.eth.getAccounts();
-        });
-    } catch (e) {
+    MyContract
+      .deployed()
+      .then(async function(instance) {
+        // Do something with instance...
+      }).catch(e => {
       console.error(e);
       alert(
         `Failed to load web3, accounts, or contract. Check console for details.`
       );
-    }
+    });
   },)
 
   return (
