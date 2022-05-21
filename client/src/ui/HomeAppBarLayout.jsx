@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, useMemo, useCallback } from "react";
+import React, { useState, useContext, useEffect, useCallback } from "react";
 import { AppTheme } from "../lib/theme";
 import {Web3Context} from "../lib/Web3Context";
 import AccountCircle from "@mui/icons-material/AccountCircle";
@@ -23,6 +23,7 @@ function HomeAppBarLayout(props) {
   const [anchorEl, setAanchorEl] = useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
+  // eslint-disable-next-line
   const initConfig = useCallback(() => {
     web3Context.eth.getCoinbase((error, coinbaseAddress) => {
       if (error) {
@@ -32,7 +33,7 @@ function HomeAppBarLayout(props) {
         setAccount(coinbaseAddress);
       }
     })
-  });
+  }, [account, web3Context.eth]);
 
   useEffect(() => {
     setTimeout(() => {
