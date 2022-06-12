@@ -32,13 +32,13 @@ function HomeAppBarLayout(props) {
       if (coinbaseAddress !== account) {
         setAccount(coinbaseAddress);
       }
-    })
+    });
   }, [account, web3Context.eth]);
 
   useEffect(() => {
     setTimeout(() => {
       initConfig();
-    }, 500)
+    }, 500);
   },)
 
   const handleProfileMenuOpen = (event) => {

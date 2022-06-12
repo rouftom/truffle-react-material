@@ -19,16 +19,15 @@ const Home = (props) => {
 
   useEffect(() => {
     MyContract
-      .deployed()
-      .then(async function(instance) {
+      ?.deployed()
+      ?.then(async function(instance) {
         // Do something with instance...
-      }).catch(e => {
-      console.error(e);
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`
-      );
-    });
-  },)
+      })
+      ?.catch(e => {
+        // Failed to load web3, accounts, or contract. Check console for details.
+        // console.error(e);
+      });
+  },);
 
   return (
     <ThemeProvider theme={createTheme(AppTheme)}>

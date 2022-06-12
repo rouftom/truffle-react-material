@@ -3,6 +3,7 @@ const webpack = require("webpack")
 module.exports = function override(config) {
   const fallback = config.resolve.fallback || {};
   Object.assign(fallback, {
+    fs: false,
     crypto: require.resolve("crypto-browserify"),
     stream: require.resolve("stream-browserify"),
     assert: require.resolve("assert"),
@@ -12,8 +13,13 @@ module.exports = function override(config) {
     path: require.resolve("path-browserify"),
     util: require.resolve("util"),
     url: require.resolve("url"),
-  })
+  });
   config.resolve.fallback = fallback;
+  const experiments = config.experiments || {};
+  Object.assign(experiments, {
+    topLevelAwait: true
+  });
+  config.experiments = experiments;
   config.ignoreWarnings = [/Failed to parse source map/];
   config.plugins = (config.plugins || []).concat([
     new webpack.ProvidePlugin({
