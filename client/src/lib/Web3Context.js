@@ -16,7 +16,9 @@ const getProvider = async () => {
     if (window.ethereum) {
       let provider = new Web3(window.ethereum);
       // Request account access if needed
-      await window.ethereum.enable();
+      // window.ethereum.enable() is deprecated
+      // use ethereum.request api instead
+      await window.ethereum.request({ method: 'eth_requestAccounts' });
       return provider;
     }
     // Legacy dapp browsers...

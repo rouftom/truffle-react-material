@@ -25,11 +25,12 @@ function HomeAppBarLayout(props) {
 
   // eslint-disable-next-line
   const initConfig = useCallback(() => {
-    web3Context.eth.getCoinbase((error, coinbaseAddress) => {
+    web3Context.eth.requestAccounts((error, coinbaseAddress) => {
       if (error) {
-        return console.log(error);
+        setAccount(null);
+        return console.error(error);
       }
-      if (coinbaseAddress !== account) {
+      if (coinbaseAddress !== account){
         setAccount(coinbaseAddress);
       }
     });

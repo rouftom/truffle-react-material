@@ -2,3 +2,4 @@ node_modules/
 build/
 .idea/
 .vscode/
+client/src/contracts/
